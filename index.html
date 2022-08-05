@@ -11,52 +11,46 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Header -->
 
-    <header>
+    <header class="page-header">
       <div class="container">
         <!-- Navigation -->
 
         <nav class="main-nav">
-          <a class="logo" href="./index.html">
+          <a class="main-nav__logo" href="./index.html">
             <span class="logo-accent">Web</span>Studio
           </a>
 
-          <ul class="page-nav list">
-            <li class="item">
+          <ul class="page-nav">
+            <li class="page-nav__item">
               <a class="link current" href="./index.html">Студия</a>
             </li>
-            <li class="item">
+            <li class="page-nav__item">
               <a class="link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="item"><a class="link" href="/">Контакты</a></li>
+            <li class="page-nav__item">
+              <a class="link" href="/">Контакты</a></li>
           </ul>
         </nav>
 
         <!-- Authentication -->
 
-        <ul class="auth-nav list">
-          <li class="item">
-            <a class="mail link" href="mailto:info@devstudio.com">
-              <svg class="icon-mail" width="16" height="16">
+        <ul class="auth-nav">
+          <li class="auth-nav__item">
+            <a class="contact" href="mailto:info@devstudio.com">
+              <svg class="contact__icon" width="16" height="16">
                 <use href="./images/symbol-defs.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a class="phone link" href="tel:+380961111111">
-              <svg class="icon-phone" width="16" height="16">
+          <li class="auth-nav__item">
+            <a class="contact" href="tel:+380961111111">
+              <svg class="contact__icon" width="16" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
