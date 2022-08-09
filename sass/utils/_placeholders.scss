@@ -1,4 +1,4 @@
-%visually-hidden{
+%visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -15,24 +15,35 @@
   padding: 0;
 }
 
+%title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
 %link {
   text-decoration: none;
 }
 
 %button {
-  background-color: $accent-color;
-  color: $white-color;
-
   display: inline-block;
   vertical-align: middle;
-
-  cursor: pointer;
-
-  font-size: 16px;
-  line-height: 1.87;
-  text-decoration: none;
-  border-radius: 4px;
   min-width: 200px;
   min-height: 50px;
+
+  cursor: pointer;
+  background-color: $accent-color;
+  color: $white-color;
+  border-color: transparent;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.88;
+  text-decoration: none;
   letter-spacing: 0.06em;
 }
