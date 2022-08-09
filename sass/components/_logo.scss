@@ -1,20 +1,18 @@
 .main-nav__logo {
-  color: $logo-header-color;
+  @extend %logo;
 
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
+  color: $logo-header-color;
 }
 
 .logo-accent {
   color: $accent-color;
 }
 
-// .logo {
-//   display: inline-block;
-//   padding-bottom: 20px;
+.footer__logo {
+  @extend %logo;
+  
+  display: inline-block;
+  padding-bottom: 20px;
 
-//   color: $logo-footer-color;
-// }
+  color: $logo-footer-color;
+}
