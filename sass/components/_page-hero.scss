@@ -36,11 +36,9 @@
 
 .hero .button {
   @extend %button;
-
-  padding: 10px 32px;
-  font-weight: 700;
+  
+  padding: 10px;
   font-style: normal;
-  border: 0;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
