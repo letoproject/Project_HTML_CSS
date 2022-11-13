@@ -5,18 +5,26 @@
 .features-list {
   @extend %list;
 
-  display: flex;
-  gap: 30px;
-  margin-bottom: 94px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  // display: flex;
+  // gap: 30px;
+  // margin-bottom: 94px;
 
   &__item {
-    width: 270px;
+    width: 100%;
+    
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   &__title {
     margin-top: 0;
     margin-bottom: 10px;
 
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -25,12 +33,16 @@
 
   &__description {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 
     color: $secondary-text-color;
 
     font-size: 14px;
     line-height: 1.71;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
 }
 
@@ -45,7 +57,4 @@
   background-color: $secondary-bgc;
   border-radius: 4px;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
 }

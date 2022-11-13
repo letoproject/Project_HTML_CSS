@@ -1,12 +1,13 @@
 .footer {
-  min-width: 1600px;
+  // min-width: 1600px;
   background-color: $footer-bgc;
 }
 
 .footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: baseline;
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -17,13 +18,14 @@
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  padding-bottom: 60px;
 
   &__list {
     @extend %list;
   }
 
   &__item {
-    margin-top: 9px;
+    margin-top: 8px;
   }
 
   &__link {
@@ -41,6 +43,7 @@
 }
 
 .join-us-title {
+  margin-top: 0px;
   margin-bottom: 20px;
 
   color: $white-color;
@@ -53,6 +56,8 @@
   @extend %list;
 
   display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
 
   &__item + &__item {
     margin-left: 10px;
@@ -88,13 +93,14 @@
 }
 
 .subscribe-container {
-  width: 570px;
+  // width: 570px;
 }
 
 .subscribe-form {
   display: flex;
   flex-direction: column;
-  position: relative;
+  align-items: center;
+  // position: relative;
 
   &__label {
     margin-bottom: 20px;
@@ -111,7 +117,8 @@
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
-    width: 358px;
+    margin-bottom: 20px;
+    width: 100%;
     height: 50px;
 
     font-weight: 400;
@@ -130,10 +137,10 @@
   & .button {
     @extend %button;
 
-    display: inline-flex;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    // display: inline-flex;
+    // position: absolute;
+    // bottom: 0;
+    // right: 0;
 
     padding: 10px 28px;
     width: 200px;

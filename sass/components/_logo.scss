@@ -1,7 +1,9 @@
 .main-nav__logo {
   @extend %logo;
+  display: inline-block;
 
   color: $logo-header-color;
+  // padding-top: 15px;
 }
 
 .logo-accent {

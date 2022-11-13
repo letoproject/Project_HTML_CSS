@@ -24,6 +24,11 @@
 }
 
 %title {
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+
   margin-top: 0;
   margin-bottom: 50px;
 

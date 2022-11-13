@@ -6,15 +6,33 @@
   @extend %list;
 
   display: flex;
-  perspective: 600px;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  // perspective: 600px;
 
   &__item {
-    width: calc((100% - 5 * 30px) / 6);
+    width: calc((100% - 2 * 30px) / 2);
     height: 90px;
+    margin: 15px;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 3 * 30px) / 3);
+      height: 90px;
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 5 * 30px) / 6);
+      height: 90px;
+      margin: 0;
+    }
   }
 
   &__item + &__item {
-    margin-left: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+    }
   }
 
   &__link {
