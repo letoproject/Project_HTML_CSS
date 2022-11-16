@@ -11,35 +11,35 @@
 .skills-list {
   @extend %list;
 
-  // display: flex;
+  display: flex;
 
-  // &__item {
-  //   width: calc((100% - 2 * 30px) / 3);
-  //   margin-right: 30px;
-  //   position: relative;
-  //   border-radius: 4px;
-  //   overflow: hidden;
-  // }
+  &__item {
+    width: calc((100% - 2 * 30px) / 3);
+    margin-right: 30px;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+  }
 
-  // &__item:last-child {
-  //   margin-right: 0;
-  // }
+  &__item:last-child {
+    margin-right: 0;
+  }
 
   &__description {
-  //   position: absolute;
-  //   padding-top: 27px;
-  //   padding-bottom: 27px;
-  //   margin: 0;
-  //   bottom: 0;
-  //   left: 0;
+    position: absolute;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0;
+    bottom: 0;
+    left: 0;
 
-  //   width: 100%;
+    width: 100%;
 
-  //   font-weight: 700;
-  //   font-size: 14px;
-  //   line-height: 1.14;
-  //   text-transform: uppercase;
-  //   text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
 
     color: $white-color;
     background-color: rgba(47, 48, 58, 0.8);

@@ -1,15 +1,22 @@
 .footer {
-  // min-width: 1600px;
   background-color: $footer-bgc;
 }
 
 .footer .container {
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: baseline;
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .footer-address {
@@ -93,14 +100,20 @@
 }
 
 .subscribe-container {
-  // width: 570px;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+  }
 }
 
 .subscribe-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  // position: relative;
+  align-items: start;
+  position: relative;
 
   &__label {
     margin-bottom: 20px;
@@ -117,8 +130,8 @@
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
-    margin-bottom: 20px;
-    width: 100%;
+    // margin-bottom: 20px;
+    width: 358px;
     height: 50px;
 
     font-weight: 400;
@@ -137,10 +150,10 @@
   & .button {
     @extend %button;
 
-    // display: inline-flex;
-    // position: absolute;
-    // bottom: 0;
-    // right: 0;
+    display: inline-flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 
     padding: 10px 28px;
     width: 200px;
