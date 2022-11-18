@@ -10,12 +10,13 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
     flex-wrap: wrap;
   }
 
   @media screen and (min-width: 1200px) {
     justify-content: space-between;
-    align-items: baseline;
+    
   }
 }
 
@@ -25,7 +26,7 @@
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 
   &__list {
     @extend %list;
@@ -112,7 +113,13 @@
 .subscribe-form {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
+  
+
+  @media screen and (min-width: 1200px) {
+    align-items: start;
+  }
+
   position: relative;
 
   &__label {
@@ -130,10 +137,21 @@
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
-    // margin-bottom: 20px;
-    width: 358px;
     height: 50px;
+    width: 100%;
+    
+    @media screen and (max-width:1199px) {
+      margin-bottom: 20px;
+    }
 
+    @media screen and (min-width:768px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width:1200px) {
+      width: 358px;
+    }
+    
     font-weight: 400;
     font-size: 16px;
     line-height: 125%;
@@ -151,9 +169,12 @@
     @extend %button;
 
     display: inline-flex;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+
+    @media screen and (min-width: 1200px) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
 
     padding: 10px 28px;
     width: 200px;
