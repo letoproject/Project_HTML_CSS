@@ -743,6 +743,16 @@ img {
   }
 }
 
+.hero .button {
+  font-style: normal;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero .button:hover, .hero .button:focus {
+  color: #2196f3;
+  background-color: #ffffff;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-list {
     display: -webkit-box;

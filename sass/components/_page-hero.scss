@@ -20,7 +20,7 @@
       url(../images/img-hero-480.jpg);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -29,7 +29,7 @@
       url(../images/img-hero-768.jpg);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -38,7 +38,7 @@
       url(../images/img-hero.jpg);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -60,7 +60,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 44px;
     line-height: 1.36;
   }
@@ -69,14 +69,13 @@
 .hero .button {
   @extend %button;
 
-  // padding: 10px;
-  // font-style: normal;
+  font-style: normal;
 
-  // transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  // &:hover,
-  // &:focus {
-  //   color: $accent-color;
-  //   background-color: $white-color;
-  // }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: $white-color;
+  }
 }

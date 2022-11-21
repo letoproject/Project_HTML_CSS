@@ -7,14 +7,14 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     justify-content: space-between;
     
   }
@@ -101,11 +101,11 @@
 }
 
 .subscribe-container {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 450px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 570px;
   }
 }
@@ -116,7 +116,7 @@
   align-items: center;
   
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     align-items: start;
   }
 
@@ -144,11 +144,11 @@
       margin-bottom: 20px;
     }
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:$tablet) {
       width: 450px;
     }
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width: $desktop) {
       width: 358px;
     }
     
@@ -170,7 +170,7 @@
 
     display: inline-flex;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       position: absolute;
       bottom: 0;
       right: 0;

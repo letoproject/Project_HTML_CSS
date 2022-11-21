@@ -19,13 +19,13 @@
     height: 90px;
     margin: 15px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       width: calc((100% - 3 * 30px) / 3);
       height: 90px;
       margin: 15px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       display: flex;
       flex-wrap: nowrap;
       margin: 0;
@@ -33,7 +33,7 @@
   }
 
   &__item + &__item {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       margin-left: 30px;
     }
   }
